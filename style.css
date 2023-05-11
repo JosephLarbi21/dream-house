@@ -9,37 +9,23 @@
   justify-content: center;
 }
 
-button,
-a {
-  /* padding: 20px 20px; */
+#button-link {
+  background-color: transparent;
+  padding: 0;
+}
+
+#Explore-Now {
+  padding: 20px 40px;
+  background: linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff 70%);
   border: 0;
-  /* outline: 0; */
-  /* margin-top: 30px; */
-  /* margin-right: 10px; */
+  outline: 0;
+  margin-top: 20px;
+  margin-right: 10px;
   border-radius: 50px;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
-  color: #fff;
-
 }
 
-.button-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.button-home-link {
-  background-color: linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff);
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* display: none; */
-}
 
 .showcase {
   position: relative;
@@ -81,11 +67,11 @@ a {
   max-width: 620px;
   left: 0;
   right: 0;
-
+  padding: 0 5vw;
 }
 
 .text h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 500;
   line-height: 1em;
   letter-spacing: 5px;
@@ -95,13 +81,17 @@ a {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: 800px 0;
-  animation: backcolor 10s linear infinite alternate;
+  animation: backcolor 10s linear infinite normal;
 }
 
 @keyframes backcolor {
-  100% {
+  0% {
     background-position: 0 0;
   }
+
+  /* 100% {
+    background-position: 800px 0;
+  } */
 }
 
 @media(max-width:700px) {
