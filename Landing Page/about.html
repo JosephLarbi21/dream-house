@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link type="images/png" rel="icon" href="images/logo.png">
+    <title>Dream House website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts dd.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4af02108e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class=" sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" id="bars-icon"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="video.html">VIDEOS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" id="bars-icon"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--------About Us Content--------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>About The Church</h1>
+                <p>Dream House Chapel is a vibrant, multi- ethnic, prophetic church with several worshippers. Started in
+                    2006 as a fellowship in Somebody's Living room at La (Labadi) in Accra, the capital of Ghana.
+                    <br>Founded by Rev. Frederick Adjei-Boadi. The prayer meetings grew by the special Grace of God and
+                    in 2011 the first ever Sunday Service was held in a class- room, wireless, still at La in Accra. The
+                    Holy Spirit had aforetime mentioned of a possible relocation and God proved His Faithfullness and by
+                    December 2014, we worshiped and celebrated God in our beautiful auditorium. Dream House Shares with
+                    everyone The God-Kind of Life in Christ Jesus.
+                </p>
+            </div>
+            <div class="about-col">
+                <img src="images/about2.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-col">
+                <h1>BELIEFS</h1>
+                <p>The Almighty God of Abraham, Isaac and Jacob (Isreal) is the Owner of The Heaven and The Earth
+                    including everything in it.<br>He is the Covenant keeping God of King David .<br> He is the God of
+                    the Sure Mercies of Solomon.<br>He is the Living God of Daniel and His Prophets.<br>The Faithful,
+                    The Only Holy God
+                    Here in Dream House, Jesus Christ is the Only Begotten of The Father, in Him is The Father well
+                    pleased. He is Our Lord and Master, Our Personal Saviour and Redeemer, Our King, Our Soon Coming
+                    King and our King Forever
+                    Again the Holy Spirit is the Only kind of God's Personal Power for His Children.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-col">
+                <h1>About The Servant Of God</h1><br>
+                <h5> NAME:</h5> REV. FREDRICK ADJIE-BOADI, <br>
+                FOUNDER AND PROPHET. <br>
+                <h5> EDUCATION:</h5> DIP. IN THEOLOGY OF MISSIONS. <br>
+                <h5>MARITAL STATUS:</h5> MARRIED.
+                </p>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-----     Footer      ------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repudiandae, et itaque ad alias explicabo
+            delectus corporis unde vero voluptatibus laboriosam <br>illo qui soluta nihil numquam. Modi nesciunt itaque
+            quasi <br>alias cupiditate dolorum quas debitis earum magni hic ullam dignissimos et iusto, ab, iure
+            repudiandae impedit ducimus provident laudantium cumque!
+        </p>
+        <div class="icons">
+            <i class="fa  fa-facebook"></i>
+            <i class="fa  fa-twitter"></i>
+            <i class="fa  fa-instagram"></i>
+            <i class="fa  fa-youtube"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet. <i class="fa  fa-heart-o"></i></p>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!------javaScript For Togglle Menu--->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
