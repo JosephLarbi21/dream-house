@@ -25,7 +25,7 @@
     <link rel=" stylesheet" href="jquery.flipster.min.css">
 </head>
 
-<body>
+<body id="body">
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
@@ -265,13 +265,15 @@
     <!------javaScript For Togglle Menu--->
 
     <script>
-        var navLinks = document.getElementById("navLinks");
-
+        const navLinks = document.getElementById("navLinks");
+        const body = document.getElementById("body")
         function showMenu() {
             navLinks.style.right = "0";
+            body.classList.add("overflow")
         }
         function hideMenu() {
             navLinks.style.right = "-200px";
+            body.classList.remove("overflow")
         }
     </script>
 
