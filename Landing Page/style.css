@@ -60,7 +60,6 @@ nav img {
   display: block;
   margin: auto;
   transition: 0.5s;
-  position: fixed;
 }
 
 .nav-links ul li:hover::after {
@@ -89,6 +88,7 @@ nav img {
   font-weight: 500;
   letter-spacing: 2px;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .hero-btn {
@@ -114,6 +114,17 @@ nav img {
     font-size: 20px;
   }
 
+  .testimonial-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .testimonial-col img {
+    max-width: 50px;
+  }
+
   #icon-display {
     display: flex;
     align-items: center;
@@ -124,29 +135,13 @@ nav img {
   #icon-display li {
     position: relative;
     display: block;
-    color: #666;
     font-size: 30px;
     height: 60px;
     width: 60px;
-    background: #171515;
     line-height: 60px;
     border-radius: 50%;
     margin: 0 15px;
     cursor: pointer;
-    transition: 0.5s;
-  }
-
-  #icon-display li:before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    background: #d35400;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    z-index: -1;
-    transform: scale(0.9);
     transition: 0.5s;
   }
 
@@ -221,8 +216,18 @@ nav img {
     height: 250px;
   }
 
+  .row {
+    flex-direction: column;
+  }
 
+}
 
+.powered-by {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -249,7 +254,9 @@ nav img {
   width: 80%;
   margin: auto;
   text-align: center;
+  justify-content: space-between;
   padding-top: 100px;
+
 }
 
 h1 {
@@ -266,8 +273,10 @@ p {
 
 .row {
   margin-top: 5%;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
 }
 
 .course-col {
@@ -276,8 +285,11 @@ p {
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
+  justify-content: space-around;
   box-sizing: border-box;
 }
+
+
 
 h3 {
   text-align: center;
@@ -287,12 +299,6 @@ h3 {
 
 .course-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-@media(max-width:700px) {
-  .row {
-    flex-direction: column;
-  }
 }
 
 
@@ -391,11 +397,12 @@ h3 {
 }
 
 .testimonial-col {
-  flex-basis: 44%;
+  flex-basis: 40%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  background: #fff3f3;
+  justify-content: center;
+  background: #fff5f5;
   padding: 25px;
   cursor: pointer;
   display: flex;
