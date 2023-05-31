@@ -16,9 +16,10 @@
 
 #Explore-Now {
   padding: 20px 40px;
-  background: linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff 70%);
+  background: linear-gradient(to right, #41419b, #5998c8 80%, #5998c8 80%);
   border: 0;
   outline: 0;
+  color: #fff;
   margin-top: 20px;
   margin-right: 10px;
   border-radius: 50px;
@@ -26,6 +27,9 @@
   cursor: pointer;
 }
 
+#body {
+  background: #111;
+}
 
 .showcase {
   position: relative;
@@ -45,7 +49,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 101.6vh;
   object-fit: cover;
   opacity: 0.8;
 }
@@ -70,6 +74,14 @@
   padding: 0 5vw;
 }
 
+marquee {
+  text-transform: uppercase;
+  color: #41419b;
+  font-weight: 500;
+  font-size: 5em;
+  background-color: transparent;
+}
+
 .text h2 {
   font-size: 2.5em;
   font-weight: 500;
@@ -81,7 +93,7 @@
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: 800px 0;
-  animation: backcolor 10s linear infinite normal;
+  animation: backcolor 30s linear infinite normal;
 }
 
 @keyframes backcolor {
