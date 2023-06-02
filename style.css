@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+#Explore-Now:hover {
+  background: rgba(34, 37, 223, 0.8);
+}
+
 #body {
   background: #111;
 }
