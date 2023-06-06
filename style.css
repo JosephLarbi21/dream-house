@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+#Explore-Now:hover {
+  background: rgba(34, 37, 223, 0.8);
+}
+
 #body {
   background: #111;
 }
@@ -74,13 +78,6 @@
   padding: 0 5vw;
 }
 
-marquee {
-  text-transform: uppercase;
-  color: #41419b;
-  font-weight: 500;
-  font-size: 5em;
-  background-color: transparent;
-}
 
 .text h2 {
   font-size: 2.5em;
@@ -88,12 +85,7 @@ marquee {
   line-height: 1em;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: transparent;
-  background-image: linear-gradient(#fff, #fff);
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-position: 800px 0;
-  animation: backcolor 30s linear infinite normal;
+  color: antiquewhite;
 }
 
 @keyframes backcolor {
